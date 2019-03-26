@@ -19,10 +19,11 @@ export default class App extends Component {
   };
 
   render() {
+    const {savedList} = this.state;
     return (
       <div>
         <Route exact path="/" component={MovieList}/>
-        <Route exact path="/movies/:id" component={Movie}/>
+        <Route exact path="/movies/:id" render={props => <Movie savedList={savedList} addToSavedList={this.addToSavedList.bind(this)} {...props}/>} />
         <SavedList list={this.state.savedList} />
       </div>
     );
