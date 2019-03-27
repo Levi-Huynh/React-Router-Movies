@@ -70,3 +70,19 @@ body {
   padding: 5px 10px;
   background-color: lightskyblue;
 }
+
+
+.saved-list {
+  color: #4285f4;
+  text-decoration: none;
+  
+
+ 
+}
+
+.saved-list .activeNavButton {
+  background-color: #4285f4;
+  color: white;
+  margin: 0 10px;
+
+}
